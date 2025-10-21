@@ -23,8 +23,8 @@ BOOL g_emojiFocus=FALSE;
 int g_screenWidth, g_screenHeight;
 
 //FUNC PROTOTYPES
-LRESULT CALLBACK MainWindowProcedure(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam); //sor
-LRESULT CALLBACK CongratsWindowProcedure(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam); //sor
+LRESULT CALLBACK MainWindowProcedure(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam); 
+LRESULT CALLBACK CongratsWindowProcedure(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam); 
 void MoveEmojiRandomPlace();
 BOOL IsMouseOnEmoji(int mouseX, int mouseY);
 void DrawEmoji(HDC hdc, int x, int y);
@@ -32,7 +32,7 @@ void DrawHahaString(HDC hdc);
 void CreateCongratsWindow();
 
 //STARTING POINT
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow){//sor
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow){
 //Telling to windows our window properties
     WNDCLASSEX wc={0};
     wc.cbSize=sizeof(WNDCLASSEX);
